@@ -10,6 +10,7 @@
     padding: 0px 20px;
     display: flex;
     justify-content: end;
+    box-shadow: 1px 1px 1px lightgray;
 }
 .nav-buttons{
     padding:0px 15px;
@@ -23,28 +24,24 @@
 }
 .content{
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr;
     height: 95vh;
     
     
 }
 .main{
-    border: black solid 1px;
     padding: 30px;
     overflow: scroll;
 }
 .menu{
-    border: black solid 1px;
+    border-right: lightgray solid 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding-top: 10px;
     
 }
-.friends{
-    border: black solid 1px;
 
-}
 .post-body{
     box-shadow: 2px 2px 2px lightgray;
     border: 1px solid lightgray;
@@ -54,7 +51,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 4fr 1fr;
-    
 }
 .post-title{
     font-weight: bold;
@@ -77,6 +73,21 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     text-align: center;
+}
+.like-button, #comment-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#like-img, #comment-img{
+    height: 15px;
+    width: 15px;
+    margin-right: 3px;
+}
+.buttons a{
+    text-decoration: none;
+    
+
 }
 .bottom-menu-container{
     margin-top: auto;
@@ -109,4 +120,64 @@
 }
 .top-menu-container{
     padding: 10px;
+}
+
+
+.logo img{
+    height: 50px;
+}
+.logo{
+    margin-right: auto;
+}
+
+.make-post-body{
+    background-color: rgb(46, 133, 247);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: lightgray 2px solid;
+}
+.make-post-body h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.make-post-body form{
+    display: none;
+}
+.make-post-body button{
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+   
+}
+.close-btn{
+    margin:10px 10px auto auto;
+}
+
+.signup{
+    max-width: 80%;
+    min-width: 40%;
+    align-self: center;
+}
+.signup-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+}
+.updateProfileBtn{
+    width: 80%;
+    margin: 20px;
+}
+.button-container-update{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

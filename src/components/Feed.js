@@ -6,7 +6,7 @@ import { collection, doc, getDocs, getFirestore } from "firebase/firestore";
 const Feed = () => {
     const [posts,setPosts] = useState([])
     const db = getFirestore(app);
-    
+    let date = new Date();
     
     
     async function getPosts(){
@@ -29,7 +29,7 @@ const Feed = () => {
     
     return ( 
         <div className="feed-body">
-            {posts.map((post)=><Post info={post} />)}
+            {posts.map((post)=><Post info={post} key={date.getHours()+"-"+date.getMinutes()+"-"+date.getSeconds()+"-"+date.getDay()+post.title}/>)}
         </div>
      );
 }
